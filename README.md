@@ -103,14 +103,14 @@ The `gasless` method returns the transaction object with the all the required in
 **Example**:
 
 ```ts
-import { StreamPay } from "@streampay-checkout-ecommerce/sdk";
+import { CandyPay } from "@streampay-checkout-ecommerce/sdk";
 import * as anchor from "@project-serum/anchor";
 import dotenv from "dotenv";
 import base58 from "bs58";
 
 dotenv.config();
 
-const sdk = new StreamPay();
+const sdk = new CandyPay();
 const connection = new anchor.web3.Connection(
   "https://metaplex.devnet.rpcpool.com"
 );
@@ -122,7 +122,7 @@ const PAYER = anchor.web3.Keypair.fromSecretKey(
   base58.decode(process.env.PAYER_SECRET_KEY!)
 );
 const USER = new anchor.web3.PublicKey(
-  "2S9jKJEGKoVxR3xkEfFyGVrLwJj1H8xYjqtSP5LAX97x"
+  "F7rscaWw3CS8T2ATEZ3pgrRHAWJV8XpGPtqvLeomW743"
 );
 
 const { transaction, mint } = await sdk.candyMachine.gasless({
@@ -179,10 +179,10 @@ const PAYER = anchor.web3.Keypair.fromSecretKey(
   base58.decode(process.env.PAYER_SECRET_KEY!)
 );
 const USER = new anchor.web3.PublicKey(
-  "2S9jKJEGKoVxR3xkEfFyGVrLwJj1H8xYjqtSP5LAX97x"
+  "F7rscaWw3CS8T2ATEZ3pgrRHAWJV8XpGPtqvLeomW743"
 );
 
-const sdk = new StreamPay();
+const sdk = new CandyPay();
 
 const { signature } = await sdk.nft.airdrop({
   metadata: {
