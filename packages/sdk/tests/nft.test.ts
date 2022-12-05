@@ -1,4 +1,4 @@
-import { CandyPay } from "../src";
+import { StreamPay } from "../src";
 
 import { PAYER, USER } from "./fixtures";
 
@@ -6,7 +6,7 @@ jest.setTimeout(100000);
 
 describe("NFT module", () => {
   it("Airdrop NFT", async () => {
-    const sdk = new CandyPay();
+    const sdk = new StreamPay();
     const { signature } = await sdk.nft.airdrop({
       metadata: {
         name: "DeGod",

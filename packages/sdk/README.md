@@ -47,18 +47,17 @@ The `mint` method returns the transaction object with the all the required instr
 **Example**:
 
 ```ts
-import { CandyPay } from "@streampay-checkout-ecommerce/sdk";
+import { StreamPay } from "@streampay-checkout-ecommerce/sdk";
 import * as anchor from "@project-serum/anchor";
 import dotenv from "dotenv";
 import base58 from "bs58";
 
 dotenv.config();
 
-const sdk = new CandyPay();
+const sdk = new StreamPay();
 const connection = new anchor.web3.Connection(
   "https://metaplex.devnet.rpcpool.com"
 );
-
 const CANDY_MACHINE_ID = new anchor.web3.PublicKey(
   "GrVSy3ZRbuw5ACbwSEMsj9gULk9MW7QPK1TUYcP6nLM"
 );
@@ -104,14 +103,14 @@ The `gasless` method returns the transaction object with the all the required in
 **Example**:
 
 ```ts
-import { CandyPay } from "@streampay-checkout-ecommerce/sdk";
+import { StreamPay } from "@streampay-checkout-ecommerce/sdk";
 import * as anchor from "@project-serum/anchor";
 import dotenv from "dotenv";
 import base58 from "bs58";
 
 dotenv.config();
 
-const sdk = new CandyPay();
+const sdk = new StreamPay();
 const connection = new anchor.web3.Connection(
   "https://metaplex.devnet.rpcpool.com"
 );
@@ -169,14 +168,12 @@ The `airdrop` method allows you to airdrop certain NFT without having to create 
 **Example**:
 
 ```ts
-import { CandyPay } from "@streampay-checkout-ecommerce/sdk";
+import { StreamPay } from "@streampay-checkout-ecommerce/sdk";
 import * as anchor from "@project-serum/anchor";
 import dotenv from "dotenv";
 import base58 from "bs58";
 
 dotenv.config();
-
-const sdk = new CandyPay();
 
 const PAYER = anchor.web3.Keypair.fromSecretKey(
   base58.decode(process.env.PAYER_SECRET_KEY!)
@@ -184,6 +181,8 @@ const PAYER = anchor.web3.Keypair.fromSecretKey(
 const USER = new anchor.web3.PublicKey(
   "2S9jKJEGKoVxR3xkEfFyGVrLwJj1H8xYjqtSP5LAX97x"
 );
+
+const sdk = new StreamPay();
 
 const { signature } = await sdk.nft.airdrop({
   metadata: {
@@ -225,6 +224,6 @@ module.exports = {
 
 ## Get in Touch
 
-- Twitter: [@streamprotocol](https://twitter.com/stream_protocol)
-- Discord: [Join Now](https://discord.com/invite/)
+- Twitter: [@stream_protocol](https://twitter.com/stream_protocol)
+- Discord: [Join Now](https://discord.com/invite/) Coming Soon!
 - Email: [contact@streamprotocol.org](mailto:contact@streamprotocol.org)

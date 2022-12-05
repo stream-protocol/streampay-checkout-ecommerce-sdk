@@ -1,4 +1,4 @@
-import { CandyPay } from "../src";
+import { StreamPay } from "../src";
 import * as anchor from "@project-serum/anchor";
 
 import { CANDY_MACHINE_ID, PAYER, USER } from "./fixtures";
@@ -7,7 +7,7 @@ jest.setTimeout(100000);
 
 describe("Candy Machine module", () => {
   it("Candy Machine mint", async () => {
-    const sdk = new CandyPay();
+    const sdk = new StreamPay();
     const connection = new anchor.web3.Connection(
       "https://metaplex.devnet.rpcpool.com"
     );
@@ -28,7 +28,7 @@ describe("Candy Machine module", () => {
   });
 
   it("Gasless Candy Machine mint", async () => {
-    const sdk = new CandyPay();
+    const sdk = new StreamPay();
     const connection = new anchor.web3.Connection(
       "https://metaplex.devnet.rpcpool.com"
     );
