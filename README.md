@@ -13,7 +13,7 @@ npm install @streampay-checkout-ecommerce/sdk @project-serum/anchor
 The entry point to the SDK is a `StreamPay` instance that will give you access to its API.
 
 ```ts
-import { CandyPay } from "@streampay-checkout-ecommerce/sdk";
+import { StreamPay } from "@streampay-checkout-ecommerce/sdk";
 
 const streampay = new StreamPay();
 ```
@@ -103,14 +103,14 @@ The `gasless` method returns the transaction object with the all the required in
 **Example**:
 
 ```ts
-import { CandyPay } from "@streampay-checkout-ecommerce/sdk";
+import { StreamPay } from "@streampay-checkout-ecommerce/sdk";
 import * as anchor from "@project-serum/anchor";
 import dotenv from "dotenv";
 import base58 from "bs58";
 
 dotenv.config();
 
-const sdk = new CandyPay();
+const sdk = new StreamPay();
 const connection = new anchor.web3.Connection(
   "https://metaplex.devnet.rpcpool.com"
 );
@@ -182,7 +182,7 @@ const USER = new anchor.web3.PublicKey(
   "2S9jKJEGKoVxR3xkEfFyGVrLwJj1H8xYjqtSP5LAX97x"
 );
 
-const sdk = new CandyPay();
+const sdk = new StreamPay();
 
 const { signature } = await sdk.nft.airdrop({
   metadata: {
