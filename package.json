@@ -1,6 +1,6 @@
 {
-    "name": "streampay-checkout-ecommerce-sdk",
-    "version": "0.0.0",
+    "name": "@streampay-checkout-ecommerce/sdk",
+    "version": "0.0.1",
     "private": true,
     "workspaces": [
         "apps/*",
