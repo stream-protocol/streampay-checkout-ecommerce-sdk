@@ -1,6 +1,6 @@
 import { CandyMachine, Nft } from "./modules";
 
-export class CandyPay {
+export class StreamPay {
   public candyMachine: CandyMachine;
   public nft: Nft;
 

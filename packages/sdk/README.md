@@ -224,6 +224,6 @@ module.exports = {
 
 ## Get in Touch
 
-- Twitter: [@stream_protocol](https://twitter.com/stream_protocol)
+- Twitter: [@stream_protocol](https://twitter.com/stream_payments)
 - Discord: [Join Now](https://discord.com/invite/) Coming Soon!
 - Email: [contact@streamprotocol.org](mailto:contact@streamprotocol.org)

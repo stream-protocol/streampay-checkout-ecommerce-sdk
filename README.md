@@ -103,14 +103,14 @@ The `gasless` method returns the transaction object with the all the required in
 **Example**:
 
 ```ts
-import { CandyPay } from "@streampay-checkout-ecommerce/sdk";
+import { StreamPay } from "@streampay-checkout-ecommerce/sdk";
 import * as anchor from "@project-serum/anchor";
 import dotenv from "dotenv";
 import base58 from "bs58";
 
 dotenv.config();
 
-const sdk = new CandyPay();
+const sdk = new StreamPay();
 const connection = new anchor.web3.Connection(
   "https://metaplex.devnet.rpcpool.com"
 );
@@ -182,7 +182,7 @@ const USER = new anchor.web3.PublicKey(
   "F7rscaWw3CS8T2ATEZ3pgrRHAWJV8XpGPtqvLeomW743"
 );
 
-const sdk = new CandyPay();
+const sdk = new StreamPay();
 
 const { signature } = await sdk.nft.airdrop({
   metadata: {
@@ -224,6 +224,6 @@ module.exports = {
 
 ## Get in Touch
 
-- Twitter: [@stream_protocol](https://twitter.com/stream_protocol)
+- Twitter: [@stream_protocol](https://twitter.com/stream_payments)
 - Discord: [Join Now](https://discord.com/invite/) Coming Soon!
 - Email: [contact@streamprotocol.org](mailto:contact@streamprotocol.org)

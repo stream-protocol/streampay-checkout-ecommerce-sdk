@@ -5,7 +5,7 @@
     "license": "MIT",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
-    "repository": "https://github.com/stream-protocol/streampay-checkout-ecommerce/sdk",
+    "repository": "https://github.com/stream-protocol/streampay-checkout-ecommerce-sdk",
     "author": "Stream Protocol <contact@streamprotocol.org>",
     "publishConfig": {
         "access": "public"
