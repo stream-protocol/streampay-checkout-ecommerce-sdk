@@ -1,11 +1,11 @@
 {
-    "name": "@streampay/checkout-sdk",
+    "name": "@streampay-checkout-ecommerce-sdk",
     "version": "0.0.1",
     "description": "A TypeScript SDK for effortlessly create NFT minting functions for Candy Machine v2 collections",
     "license": "MIT",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
-    "repository": "https://github.com/stream-protocol/streampay-checkout-sdk",
+    "repository": "https://github.com/stream-protocol/streampay-checkout-ecommerce-sdk",
     "author": "Stream Protocol <contact@streamprotocol.org>",
     "publishConfig": {
         "access": "public"
