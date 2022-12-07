@@ -1,11 +1,11 @@
-# `@streampay/checkout-sdk`
+# `@streampay/checkout-payments-sdk`
 
 StreamPay SDK lets you effortlessly create NFT minting functions for Candy Machine v2 collections. Simulate minting transactions for multiple use-cases like NFT collection launch, gasless mint and many more on Solana Blockchain!
 
 ## Installation
 
 ```bash
-npm install @streampay/checkout-sdk @project-serum/anchor
+npm install @streampay/checkout-payments-sdk @project-serum/anchor
 ```
 
 ## Setup
@@ -13,7 +13,7 @@ npm install @streampay/checkout-sdk @project-serum/anchor
 The entry point to the SDK is a `StreamPay` instance that will give you access to its API.
 
 ```ts
-import { StreamPay } from "@streampay/checkout-sdk";
+import { StreamPay } from "@streampay/checkout-payments-sdk";
 
 const streampay = new StreamPay();
 ```
@@ -104,7 +104,7 @@ The `gasless` method returns the transaction object with the all the required in
 **Example**:
 
 ```ts
-import { StreamPay } from "@streampay/checkout-sdk";
+import { StreamPay } from "@streampay/checkout-payments-sdk";
 import * as anchor from "@project-serum/anchor";
 import dotenv from "dotenv";
 import base58 from "bs58";
@@ -169,7 +169,7 @@ The `airdrop` method allows you to airdrop certain NFT without having to create 
 **Example**:
 
 ```ts
-import { StreamPay } from "@streampay/checkout-sdk";
+import { StreamPay } from "@streampay/checkout-payments-sdk";
 import * as anchor from "@project-serum/anchor";
 import dotenv from "dotenv";
 import base58 from "bs58";
@@ -225,6 +225,6 @@ module.exports = {
 
 ## Get in Touch
 
-- Twitter: [@streampayfun](https://twitter.com/streampayfun)
-- Discord: [Join Now](https://discord.com/invite/VGjPXWUHGT)
+- Twitter: [@streampayfun](https://twitter.com/stream_payments)
+- Discord: [Join Now](https://discord.com/invite/ Coming Soon!
 - Email: [contact@streamprotocol.org](mailto:contact@streamprotocol.org)
