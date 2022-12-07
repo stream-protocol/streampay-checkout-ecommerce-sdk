@@ -1,6 +1,6 @@
 {
-    "name": "streampay-checkout-ecommerce",
-    "version": "0.0.1",
+    "name": "@streampay/checkout-sdk",
+    "version": "0.0.30",
     "description": "A TypeScript SDK for effortlessly create NFT minting functions for Candy Machine v2 collections",
     "license": "MIT",
     "main": "dist/index.js",
