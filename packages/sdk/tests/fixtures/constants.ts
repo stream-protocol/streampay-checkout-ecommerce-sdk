@@ -11,5 +11,5 @@ export const PAYER = anchor.web3.Keypair.fromSecretKey(
   base58.decode(process.env.PAYER_SECRET_KEY!)
 );
 export const USER = new anchor.web3.PublicKey(
-  "F7rscaWw3CS8T2ATEZ3pgrRHAWJV8XpGPtqvLeomW743"
+  "8k1JM5Cd6Hz7G6Jsq1FSzgRYPyS4RFj9k11Uvt5bgWRP"
 );
